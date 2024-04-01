@@ -1,0 +1,54 @@
+.container {
+    width: 600px;
+    height: 300;
+    background-color: brown;
+    display: grid;
+    /* grid-template-rows: 50px 50px 50px 50px 50px; */
+    /* grid-template-columns: 100px 100px 100px; */
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-items: start;
+}
+
+.item {
+    width: 100px;
+    height: 50px;
+    background-color: greenyellow;
+    font-size: 20;
+    text-align: center;
+    padding-top: 2px;
+    border: 2px solid black;
+}
+
+
+.box {
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+    margin-top: 20px;
+    /* animation-name: fontAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 3;
+    animation-direction: normal; */
+    animation: fontAnimation 2s ease-in 0s 3 normal;
+}
+
+@keyframes fontAnimation {
+    form {font-size: 20px}
+    to {font-size: 40px}
+}
+
+h1 {
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+@media (min-width: 400px) {
+    h1 {
+        background-color: red;
+    }
+}
